@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 Summary:    A role for users
 License:    GPL+ or Artistic
@@ -13,6 +13,7 @@ Source0:    http://www.cpan.org/modules/by-module/KiokuX/%{upstream_name}-%{upst
 
 BuildRequires: perl(KiokuDB)
 BuildRequires: perl(Moose)
+BuildRequires: perl(MooseX::Role::Parameterized)
 BuildRequires: perl(MooseX::Types::Authen::Passphrase)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::use::ok)
