@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    A role for users
 License:    GPL+ or Artistic
@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/KiokuX/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(Crypt::Rijndael)
 BuildRequires: perl(KiokuDB)
 BuildRequires: perl(Moose)
 BuildRequires: perl(MooseX::Role::Parameterized)
