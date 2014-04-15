@@ -20,6 +20,7 @@ BuildRequires:	perl(MooseX::Types::Authen::Passphrase)
 BuildRequires:	perl(Sub::Exporter)
 BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(namespace::clean)
+BuildRequires:	perl(namespace::autoclean)
 BuildArch:	noarch
 
 %description
@@ -47,15 +48,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %files
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.20.0-4mdv2011.0
-+ Revision: 657785
-- rebuild for updated spec-helper
-
-* Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 0.20.0-3mdv2011.0
-+ Revision: 624806
-- Add the dependency on Crypt::Rijndael
-- Add a missing dep
-- import perl-KiokuX-User
-
